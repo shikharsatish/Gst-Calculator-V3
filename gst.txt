@@ -1,0 +1,21 @@
+package com.innovect.assignment1;
+
+public class TaxCalculator {
+ static int rice = 100;
+  static int wheat = 500;
+  static int chair = 2500;
+  double furnitureGst = 0.05;
+
+  double calculateGst(double foodItem, double furniture) {
+    furniture = chair + (furnitureGst * chair);
+    return furniture + foodItem;
+  }
+
+  public static void main(String[] args) {
+    TaxCalculator taxCalculator = new TaxCalculator();
+    double food = rice + (2 * wheat);
+    double furniture = chair;
+    double totalAmount = taxCalculator.calculateGst(food, furniture);
+    System.out.println("Total Amount : " + totalAmount);
+  }
+}
