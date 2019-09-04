@@ -12,7 +12,6 @@ public class BillGenerator {
     Cart.addProductToCart(biscuit, 2);
     Cart.addProductToCart(chair, 2);
     Cart.addProductToCart(earphone, 6);
-    Cart.addProductToCart(earphone, 56);
     Service service = new Service();
     double totalBill = service.totalBill(Cart.getCartItems());
     System.out.println("\nTotal Amount:" + totalBill);
