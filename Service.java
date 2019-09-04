@@ -58,7 +58,7 @@ public class Service {
       totalBill+=discountOnBill(entry.getKey(), entry.getValue());
        //totalBill += (entry.getKey().getPrice() + GstSlab.gstCalculator(entry.getKey()))* entry.getValue();
       //totalBill = foodBill + furnitureBill + electronicBill;
-     // System.out.println("Category:" + entry.getKey().getCategory() + "\tProduct Name:" + entry.getKey().getProductName() + "\tPrice:" + entry.getKey().getPrice() + "\tQuantity:" + entry.getValue());
+     System.out.println("Category:" + entry.getKey().getCategory() + "\tProduct Name:" + entry.getKey().getProductName() + "\tPrice:" + entry.getKey().getPrice() + "\tQuantity:" + entry.getValue());
 
     }
     return totalBill;
