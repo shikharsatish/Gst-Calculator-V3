@@ -16,7 +16,7 @@ public class BillGenerator {
     Service service = new Service();
     double totalBill = service.totalBill(Cart.getCartItems());
     System.out.println("\nTotal Amount:" + totalBill);
-    System.out.println("Bill:" + Cart.getCartItems());
-    Map<Product, Integer> cartItems = Cart.getCartItems();
+    //System.out.println("Bill:" + Cart.getCartItems());
+    //Map<Product, Integer> cartItems = Cart.getCartItems();
   }
 }
